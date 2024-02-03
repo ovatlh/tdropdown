@@ -1,0 +1,42 @@
+* {
+  /* outline: 1px solid rgba(255, 0, 0, 0.1); */
+}
+
+html {
+  background-color: hsl(0, 0%, 80%);
+  color: black;
+  overflow-y: scroll;
+}
+
+body {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.custom-label-content {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: column;
+}
+
+.custom-content {
+  border: 2px dotted green;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.custom-content * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.t-dropdown-container input {
+  min-width: 0;
+}

@@ -1,0 +1,67 @@
+.t-dropdown-container,
+.t-dropdown-container > .t-dropdown-input,
+.t-dropdown-container > .t-dropdown-label
+.t-dropdown-container > .t-drodown-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.t-dropdown-container {
+  position: relative;
+}
+
+.t-dropdown-container > .t-dropdown-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 0;
+  min-height: 0;
+  opacity: 0;
+}
+
+.t-dropdown-container > .t-dropdown-content {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.t-dropdown-container > .t-dropdown-label {
+  width: 100%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.t-dropdown-container > .t-dropdown-content,
+.t-dropdown-container > input.t-open:checked ~ label.t-open,
+.t-dropdown-container > input.t-close:checked ~ label.t-close,
+.t-dropdown-container > input.t-open:not(:checked) ~ label.t-close {
+  display: none;
+}
+
+.t-dropdown-container,
+.t-dropdown-container > .t-dropdown-label,
+.t-dropdown-container > input.t-open:checked ~ .t-dropdown-content {
+  display: grid;
+  width: auto;
+}
+
+.t-dropdown-container > .t-dropdown-label {
+  background-color: #EFEFEF;
+  border: 1px solid #767676;
+  padding: 0.5em;
+  border-radius: 2px;
+}
+
+.t-dropdown-container > .t-dropdown-label:hover {
+  background-color: #E5E5E5;
+}
+
+
+.t-dropdown-container > .t-dropdown-content {
+  background-color: white;
+  min-width: 100%;
+}
